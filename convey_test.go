@@ -32,6 +32,6 @@ func TestCheckVal(t *testing.T) {
 	convey.Convey("TestCheckVal unhappy path", t, func(){
 		res := CheckVal("CCC")
 		convey.So(res, convey.ShouldBeFalse)
-		assert.True(t, res)
+		assert.False(t, res)
 	})
 }
