@@ -40,3 +40,5 @@ func TestGetName(t *testing.T) {
 	}
 
 }
+
+//go:generate mockgen -source=./gomock_test.go -destination=./mock/mocktest_mock.go

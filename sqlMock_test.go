@@ -1,7 +1,6 @@
 package go_UT_learn
 
 import (
-	/*
 	"github.com/stretchr/testify/assert"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -9,8 +8,7 @@ import (
 	"testing"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	 */
-	"gorm.io/gorm"
+
 )
 // sqlMock, 无需关注db连接，模拟实现了sql driver mock
 
@@ -29,7 +27,7 @@ func(p *Repository)ListAll()([]*Goods, error) {
 	return goods, err
 }
 
-/*
+
 func TestSql(t *testing.T) {
 	// 使用 sqlmock.New() 创建 *sql.DB 的模拟实例和模拟控制器
 	db, mock, err := sqlmock.New()
@@ -58,5 +56,3 @@ func TestSql(t *testing.T) {
 	assert.Nil(t, goods)
 
 }
-
-*/
